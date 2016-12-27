@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  JiaProject
+//
+//  Created by 刘佳 on 16/11/23.
+//  Copyright © 2016年 7k7k. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AFNetworking.h"
+#import "UIView+JLExtension.h"
+#import "UIBarButtonItem+JLExtension.h"
+#endif
+// 颜色
+#define XMGARGBColor(a, r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define XMGColor(r, g, b) XMGARGBColor(255, (r), (g), (b))
+#define XMGGrayColor(v) XMGColor((v), (v), (v))
+#define XMGCommonBgColor XMGGrayColor(215)
+#define XMGRandomColor XMGColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+// 标签的背景颜色
+#define XMGTagBgColor XMGColor(70, 142, 243)
+#define XMGRequestURL  @"http://api.budejie.com/api/api_open.php"
